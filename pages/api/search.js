@@ -1,6 +1,6 @@
 import heroes from '../../heroes.json'
 
-export default (reg, res) => {
+export default function handler(reg, res) {
     const filter = reg.query.q ? new RegExp(reg.query.q, 'i') : /.*/
     res.statusCode = 200;
 
