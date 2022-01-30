@@ -4,7 +4,7 @@ import heroStyles from '../styles/Hero.module.css'
 const Heroes = ({ heroes }) => {
   return (
       <div className={heroStyles.grid}>
-        {heroes.map(hero => <Hero hero={hero}/>)}
+        {heroes.map(hero => <Hero key={hero.id} hero={hero}/>)}
       </div>
   );
 };
